@@ -99,7 +99,9 @@
 #contPpal {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     background-color: #d5e5f2;
+    color: #023e73;
     margin-top: 50px;
     padding: 50px;
 }
@@ -120,9 +122,9 @@
     border-radius: 20px;
 }
 
-#cajaVideo video {
-    width: 600px;
-    height: auto;
+#cajaVideo iframe {
+    width: 500px;
+    height: 300px;
 }
 
 #textoVideo {
