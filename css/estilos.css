@@ -13,7 +13,7 @@
     color: #d5e5f2;
     text-align: center;
     background-color: #023e73;
-    font-size: 25px;
+    font-size: 50px;
 }
 
 #textoLogo2 {
@@ -22,6 +22,7 @@
     background-color: #023e73;
     font-size: 50px;
     padding-bottom: 15px;
+    letter-spacing: 3px;
 }
 
 #fotoLogo {
@@ -43,6 +44,13 @@
 
 .rammetto-one-regular {
   font-family: "Rammetto One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.exo-uniquifier {
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -72,7 +80,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 15px;
 }
 
 #nosImg {
@@ -90,7 +98,7 @@
 }
 
 #nosImg img {
-    width: 300px;
+    width: 250px;
     height: auto;
     padding: 10px;
     border-radius: 5px;
@@ -104,6 +112,8 @@
     color: #023e73;
     margin-top: 50px;
     padding: 50px;
+    gap: 30px;
+    text-align: justify;
 }
 #descripcion {
     margin-top: 20px;
@@ -123,8 +133,8 @@
 }
 
 #cajaVideo iframe {
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 250px;
 }
 
 #textoVideo {
@@ -133,6 +143,13 @@
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 16px;
+    text-align: justify;
+    color: #0367a6
+}
+
+#textoVideo h2 {
+    color: #048abf;
+    font-size: 30px;
 }
 

@@ -55,3 +55,24 @@
     color:#e6b497;
     font-size: 20px;
 }
+
+#formulario {
+  background-color: #023e73;
+  color:#e6b497;
+}
+
+#contenidoFooter {
+  display: flex;
+  padding: 150px;
+  justify-content: space-evenly;
+  
+  margin-top: 20px;
+}
+
+#cont1 {
+  width: 45%;
+}
+
+#cont2 {
+  width: 45%;
+}
