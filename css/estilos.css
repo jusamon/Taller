@@ -4,31 +4,7 @@
     box-sizing: border-box;
 }
 
-#cajaLogo {
-    width: 100%;
-    background-color: #023e73;
-}
-
-#textoLogo {
-    color: #d5e5f2;
-    text-align: center;
-    background-color: #023e73;
-    font-size: 50px;
-}
-
-#textoLogo2 {
-    color: #d5e5f2;
-    text-align: center;
-    background-color: #023e73;
-    font-size: 50px;
-    padding-bottom: 15px;
-    letter-spacing: 3px;
-}
-
-#fotoLogo {
-    width: 180px;
-}
-
+/* -- ESTILOS DE FUENTE -- */
 .luckiest-guy-regular {
     font-family: "Luckiest Guy", cursive;
     font-weight: 200;
@@ -53,6 +29,32 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+
+#cajaLogo {
+    width: 100%;
+    background-color: #023e73;
+}
+
+#textoLogo {
+    color: #d5e5f2;
+    text-align: center;
+    background-color: #023e73;
+    font-size: 50px;
+}
+
+#textoLogo2 {
+    color: #d5e5f2;
+    text-align: center;
+    background-color: #023e73;
+    font-size: 50px;
+    padding-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+#fotoLogo {
+    width: 180px;
 }
 
 #menu {
