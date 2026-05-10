@@ -4,8 +4,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/estilos_pags.css">
     <title>Contacto</title>
 </head>
@@ -17,7 +20,7 @@
             <img src="imagenes/logo-sinfondo.png" id="fotoLogo1">
         </div>
         
-        <div id="textoLogo1" class="exo-uniquifier">
+        <div id="textoLogo1" class="aclonica-regular">
             <strong>LAB DENTAL Ignacio Sánchez</strong><br>
         </div>
     </section>
@@ -30,10 +33,10 @@
         </ul>
     </nav>
 
-    <div id="contenidoFooter">
-            <div id="cont1">
+    <div id="contenidoP3" class="exo-uniquifier">
+            <div id="contBox">
                 <h2>Ubicación</h2><br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ex nobis nam ipsam! Placeat, autem quas, ipsum recusandae reprehenderit veniam consequatur consectetur deleniti nesciunt velit libero vero vitae, sit laboriosam.
+                Estamos ubicados en la ciudad de Medellín. Recuerda contactarnos antes de visitarnos!
                 <br><br>
 
                 <ul>
@@ -43,42 +46,52 @@
                 </ul>
             </div>
             
-            <div id="cont2">
+            <div id="contBox">
                 <h2>Redes Sociales</h2><br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores hic fugit temporibus corrupti cum nihil, rem laborum similique facilis nobis cumque fuga fugiat saepe sit ratione eveniet id perspiciatis.
+                Encuéntranos también en redes sociales, puedes visualizar parte de nuestro trabajo allí también.
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                </ul>
             </div>
         </div>
 
-    <div id="formulario">
+    <div id="formulario" class="exo-uniquifier">
         <h2>Regístrate:</h2>
         <form action="" method="" id="formularioInscripcion">
-            
-            
             <label for="sexo">Sexo:</label>
-            <label>Hembra</label><input type="radio" name="sexoCaballo" id="">
-            <label>Macho</label><input type="radio" name="sexoCaballo" id="">
+            <label>Mujer</label><input type="radio" name="sexoPersona" id="">
+            <label>Hombre</label><input type="radio" name="sexoPersona" id="">
             <br>
 
-            <label for="habilidades">Habilidades:</label>
-
-            Velocidad <input type="checkbox">
-            Artístico <input type="checkbox">
+            <label for="cliente">Tipo cliente:</label>
+            Paciente <input type="radio" name="tipoCiente">
+            Odontólogo <input type="radio" name="tipoCiente">
+            Consultorio <input type="radio" name="tipoCiente">
             <br>
 
-            <label for="nomCaballo">Nombre Caballo:</label>
-            <input type="text" name="nomCaballo">
+            <label for="nomPersona">Nombre:</label>
+            <input type="text" name="nomPersona">
             <br>
 
-            <label for="nomPropietario">Nombre Propietario:</label>
-            <input type="text" name="nomPropietario" required>
+            <label for="apellidoPersona">Apellido:</label>
+            <input type="text" name="apellidoPersona" required>
+            <br>
+
+            <label for="cedulaPersona">Cédula:</label>
+            <input type="number" name="cedulaPersona">
+            <br>
+
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="number" name="telefono">
             <br>
 
             <label for="correo">Correo Electrónico:</label>
-            <input type="email" name="correoPropietario">
+            <input type="email" name="correoPersona">
             <br>
 
             <label for="pais">País:</label>
-            <select name="paisNacimientoCab" id="">
+            <select name="paisNacimiento" id="">
                 <option>-- SELECCIÓN --</option>
                 <option value="1">Colombia</option>
                 <option value="2">Venezuela</option>
@@ -88,13 +101,6 @@
             </select>
             <br>
                         
-            <label for="">Foto:</label>
-            <input type="file" name="fotoCaballo" id=""><br>
-                        
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" name="contrasena" id="" required>
-            <br>
-
             <input type="submit" value="Guardar Información">
         </form>
 

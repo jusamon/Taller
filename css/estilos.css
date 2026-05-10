@@ -4,34 +4,6 @@
     box-sizing: border-box;
 }
 
-/* -- ESTILOS DE FUENTE -- */
-.luckiest-guy-regular {
-    font-family: "Luckiest Guy", cursive;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.shadows-into-light-regular {
-  font-family: "Shadows Into Light", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 45px;
-}
-
-.rammetto-one-regular {
-  font-family: "Rammetto One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.exo-uniquifier {
-  font-family: "Exo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
 #cajaLogo {
     width: 100%;
     background-color: #023e73;
@@ -97,6 +69,11 @@
     border-radius: 5px;
     box-shadow: 5px 5px 15px 2px gray;
     font-size: 30px;
+}
+
+#nosImg:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 12px #bf8360;
 }
 
 #nosImg img {
