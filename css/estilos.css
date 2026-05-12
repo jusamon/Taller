@@ -4,9 +4,21 @@
     box-sizing: border-box;
 }
 
+/*-- Seccion CABEZA --*/
+#cabeza {
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #cajaLogo {
     width: 100%;
     background-color: #023e73;
+}
+
+#cajaLogo img {
+    width: 140px;
 }
 
 #textoLogo {
@@ -14,6 +26,7 @@
     text-align: center;
     background-color: #023e73;
     font-size: 50px;
+    white-space: nowrap;
 }
 
 #textoLogo2 {
@@ -23,17 +36,13 @@
     font-size: 50px;
     padding-bottom: 15px;
     letter-spacing: 3px;
-}
-
-#fotoLogo {
-    width: 180px;
+    white-space: nowrap;
 }
 
 #menu {
     background-color: #0367a6;
     padding: 15px;
     box-shadow: 5px 2px 15px 2px black;
-    margin-bottom: 25px;
 }
 
 #menu li {
@@ -46,54 +55,80 @@
 #menu li a {
     text-decoration: none;
     color: #e6b497;
-    font-size: 18px;
+    font-size: 22px;
 }
 
+#menu li a:hover {
+    text-shadow: 1px 1px 2px black;
+}
+
+
+/*-- Seccion NOSOTROS --*/
 #nosotros {
-    margin-top: 50px;
-    display: flex;
+    display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 15px;
+    background-color: white;
+    gap: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-inline: 25px;
+    text-align: center;
 }
 
 #nosImg {
     background-color: #048abf;
     color: #d5e5f2;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 10px;
 
-    aspect-ratio: 1/1;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 5px 5px 15px 2px gray;
-    font-size: 30px;
-}
-
-#nosImg:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 12px #bf8360;
 }
 
 #nosImg img {
-    width: 250px;
-    height: auto;
-    padding: 10px;
-    border-radius: 5px;
+    width: 230px;
+    border-radius: 10px;
 }
 
+#nosImg span {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+#nosImg img:hover {
+    transform: translateY(-5px);
+    height: 270px;
+    width: auto;
+    box-shadow: 10px 10px 10px #c09175, -10px -10px 10px #c09175;
+}
+
+/*-- Contenido PRINCIPAL */
 #contPpal {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #d5e5f2;
+    background-color: #ebf1f7;
     color: #023e73;
-    margin-top: 50px;
-    padding: 50px;
-    gap: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-inline: 50px;
+    gap: 50px;
     text-align: justify;
+    font-size: 20px;
 }
+
+/*-- Seccion VIDEO--*/
+#contenido2 {
+    background-color: white;
+}
+
 #descripcion {
     margin-top: 20px;
     display: flex;
@@ -124,11 +159,133 @@
     border-radius: 20px;
     font-size: 16px;
     text-align: justify;
-    color: #0367a6
+    color: #0367a6;
+    font-size: 20px;
 }
 
 #textoVideo h2 {
     color: #048abf;
-    font-size: 30px;
+    text-align: center;
+    font-size: 50px;
 }
 
+
+/* -- Responsive DESIGN -- */
+
+@media(max-width:450px) {
+    #cabeza {
+        width: auto;
+        justify-content: center;
+    }
+
+    #fotoLogo {
+        width: 80px;
+    }
+
+    #textoLogo {
+        font-size: 25px;
+    }
+
+    #textoLogo2 {
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    #menu {
+        font-size: 25px;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #nosotros {
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto 10px auto;
+    }
+
+    #nosImg img {
+        width: 180px;
+        height: auto;
+    }
+
+    #contPpal {
+        flex-direction: column;
+        margin: 0 auto 10px auto;
+        font-size: 15px;
+    }
+
+    #descripcion {
+        flex-direction: column;
+        margin: 0 auto 10px auto;
+        font-size: 12px;
+    }
+
+    #cajaVideo iframe {
+        width: 300px;
+        height: 250px;
+    }
+
+    #textoVideo {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:450px) {
+    #cabeza {
+        width: auto;
+        justify-content: center;
+    }
+
+    #fotoLogo {
+        width: 80px;
+    }
+
+    #textoLogo {
+        font-size: 25px;
+    }
+
+    #textoLogo2 {
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    #menu {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #nosotros {
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto 10px auto;
+        padding-top: 45px;
+    }
+
+    #nosImg img {
+        width: 180px;
+        height: auto;
+    }
+
+    #contPpal {
+        flex-direction: column;
+        margin: 0 auto 10px auto;
+        font-size: 15px;
+    }
+
+    #descripcion {
+        flex-direction: column;
+        margin: 0 auto 10px auto;
+        font-size: 12px;
+    }
+
+    #cajaVideo iframe {
+        width: 300px;
+        height: 250px;
+    }
+
+    #textoVideo {
+        font-size: 15px;
+    }
+}

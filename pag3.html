@@ -17,94 +17,97 @@
 
     <section id="cabezaP1">
         <div id="cajaLogo1">
-            <img src="imagenes/logo-sinfondo.png" id="fotoLogo1">
+            <img src="imagenes/logo-sinfondo.png">                
+            <span id="textoLogo1" class="aclonica-regular"><strong>LAB DENTAL Ignacio Sánchez</strong></span>
         </div>
-        
-        <div id="textoLogo1" class="aclonica-regular">
-            <strong>LAB DENTAL Ignacio Sánchez</strong><br>
-        </div>
+
+        <nav id="menu" class="exo-uniquifier">        
+            <ul>
+                <li><a href="index.html"><strong>Inicio</strong></a></li>
+                <li><a href="pag2.html"><strong>Nuestra Oferta</strong></a></li>
+                <li><a href="pag1.html"><strong>¿Qué es un Lab Dental?</strong></a></li>
+            </ul>
+        </nav>   
     </section>
 
-    <nav id="menu">
-        <ul>
-            <li><a href="index.html"><strong>Inicio</strong></a></li>
-            <li><a href="pag1.html"><strong>¿Qué es un Lab Dental?</strong></a></li>
-            <li><a href="pag2.html"><strong>Nuestra Oferta</strong></a></li>
-        </ul>
-    </nav>
-
     <div id="contenidoP3" class="exo-uniquifier">
-            <div id="contBox">
-                <h2>Ubicación</h2><br>
-                Estamos ubicados en la ciudad de Medellín. Recuerda contactarnos antes de visitarnos!
-                <br><br>
+        <div id="contBox">
+            <h2>Ubicación</h2><br>
+            Estamos ubicados en la ciudad de Medellín. Recuerda contactarnos antes de visitarnos!
+            <br><br>
 
-                <ul>
-                    <li>Dirección: Cra 83A # 34B - 13</li>
-                    <li>Barrio Laureles, sector La Castellana</li>
-                    <li>Medellín - Antioquia</li>
-                </ul>
-            </div>
-            
-            <div id="contBox">
-                <h2>Redes Sociales</h2><br>
-                Encuéntranos también en redes sociales, puedes visualizar parte de nuestro trabajo allí también.
-                <ul>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                </ul>
-            </div>
+            <ul>
+                <li>Dirección: Cra 83A # 34B - 13</li>
+                <li>Barrio Laureles, sector La Castellana</li>
+                <li>Medellín - Antioquia</li>
+            </ul>
         </div>
-
-    <div id="formulario" class="exo-uniquifier">
-        <h2>Regístrate:</h2>
-        <form action="" method="" id="formularioInscripcion">
-            <label for="sexo">Sexo:</label>
-            <label>Mujer</label><input type="radio" name="sexoPersona" id="">
-            <label>Hombre</label><input type="radio" name="sexoPersona" id="">
-            <br>
-
-            <label for="cliente">Tipo cliente:</label>
-            Paciente <input type="radio" name="tipoCiente">
-            Odontólogo <input type="radio" name="tipoCiente">
-            Consultorio <input type="radio" name="tipoCiente">
-            <br>
-
-            <label for="nomPersona">Nombre:</label>
-            <input type="text" name="nomPersona">
-            <br>
-
-            <label for="apellidoPersona">Apellido:</label>
-            <input type="text" name="apellidoPersona" required>
-            <br>
-
-            <label for="cedulaPersona">Cédula:</label>
-            <input type="number" name="cedulaPersona">
-            <br>
-
-            <label for="telefono">Teléfono de contacto:</label>
-            <input type="number" name="telefono">
-            <br>
-
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" name="correoPersona">
-            <br>
-
-            <label for="pais">País:</label>
-            <select name="paisNacimiento" id="">
-                <option>-- SELECCIÓN --</option>
-                <option value="1">Colombia</option>
-                <option value="2">Venezuela</option>
-                <option value="3">Perú</option>
-                <option value="4">Brasil</option>
-                <option value="5">Argentina</option>
-            </select>
-            <br>
-                        
-            <input type="submit" value="Guardar Información">
-        </form>
-
+            
+        <div id="contBox">
+            <h2>Redes Sociales</h2><br>
+            Encuéntranos también en redes sociales, puedes visualizar parte de nuestro trabajo allí también.
+            <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+            </ul>
+        </div>
     </div>
+
+
+    <footer id="footerP3">
+        <div id="formulario" class="exo-uniquifier">
+            <h2 class="rammetto-one-regular">Regístrate:</h2>
+            <form action="" method="" id="formularioInscripcion">               
+                <label for="nomPersona"><strong>Nombre:</strong></label>
+                <input type="text" name="nomPersona">
+                <br>
+                
+                <label for="apellidoPersona"><strong>Apellido:</strong></label>
+                <input type="text" name="apellidoPersona" required>
+                <br>
+                <label for="cliente"><strong>Tipo cliente:</strong></label>
+                Paciente <input type="radio" name="tipoCiente">
+                Odontólogo <input type="radio" name="tipoCiente">
+                Consultorio <input type="radio" name="tipoCiente">
+                <br>
+                
+                <label for="telefono"><strong>Teléfono de contacto:</strong></label>
+                <input type="number" name="telefono">
+                <br>
+                
+                <label for="correo"><strong>Correo Electrónico:</strong></label>
+                <input type="email" name="correoPersona">
+                <br>
+                
+                <label for="sexo"><strong>Sexo:</strong></label>
+                <label>Mujer</label><input type="radio" name="sexoPersona" id="">
+                <label>Hombre</label><input type="radio" name="sexoPersona" id="">
+                <label>No Binario</label><input type="radio" name="sexoPersona" id="">
+                <br>
+
+                <label for="ciudad"><strong>Ciudad:</strong></label>
+                <input type="text" name="ciudad">
+                <br>
+
+                <label for="pais"><strong>País:</strong></label>
+                <select name="paisNacimiento" id="">
+                    <option>-- SELECCIÓN --</option>
+                    <option value="1">Colombia</option>
+                    <option value="2">Venezuela</option>
+                    <option value="3">Perú</option>
+                    <option value="4">Brasil</option>
+                    <option value="5">Argentina</option>
+                    <option value="6">Chile</option>
+                </select>
+                <br>
+                            
+                <input type="submit" value="ENVIAR INFORMACIÓN" id="botonGuardar" class="rammetto-one-regular">
+            </form>
+        </div>
+        <div id="imagenReg">
+            <img src="imagenes/sticker.webp" alt="">
+        </div>
+    </footer>
 
     
         
